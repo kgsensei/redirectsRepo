@@ -1,0 +1,6 @@
+Options +FollowSymLinks -MultiViews
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} ^link\.kgsensei\.dev$ [NC]
+RewriteRule ^ https://link.kgsensei.dev%{REQUEST_URI} [L,NE,P]
