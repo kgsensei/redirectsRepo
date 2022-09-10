@@ -1,4 +1,3 @@
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteRule ^s/([a-zA-Z_-]+)$ /s/ [L]
-</IfModule>
+RewriteEngine on
+
+RewriteRule ^([^\.]+)$ index.html [NC,L]
