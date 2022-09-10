@@ -1,3 +1,4 @@
 RewriteEngine on
 
-RewriteRule ^([^\.]+)$ index.html?t=$1 [NC,L]
+DirectoryIndex /index.html
+FallbackResource /index.html
